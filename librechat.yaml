@@ -6,38 +6,55 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "user_provided"
       models:
-        default: []
+        default:
+          - "qwen3.8-max"
         fetch: true
+      titleConvo: true
+      titleModel: "qwen3.8-max"
       modelDisplayLabel: "Zen"
 
     - name: "OpenRouter"
       apiKey: "user_provided"
       baseURL: "user_provided"
       models:
-        default: []
+        default:
+          - "stealth/union-alpha"
         fetch: true
+      titleConvo: true
+      titleModel: "stealth/union-alpha"
+      dropParams:
+        - "stop"
       modelDisplayLabel: "OpenRouter"
 
     - name: "YJS"
       apiKey: "user_provided"
       baseURL: "user_provided"
       models:
-        default: []
+        default:
+          - "ling-3.0-flash-sante"
         fetch: true
+      titleConvo: true
+      titleModel: "ling-3.0-flash-sante"
       modelDisplayLabel: "YJS"
 
     - name: "Xian"
       apiKey: "user_provided"
       baseURL: "user_provided"
       models:
-        default: []
+        default:
+          - "grok-4.6"
         fetch: true
+      titleConvo: true
+      titleModel: "grok-4.6"
       modelDisplayLabel: "Xian"
 
-    - name: "Chosen 1"
+    - name: "Cerebras"
       apiKey: "user_provided"
       baseURL: "user_provided"
       models:
-        default: []
+        default:
+          - "llama3.1-8b"
         fetch: true
-      modelDisplayLabel: "Chosen 1"
+      titleConvo: true
+      titleModel: "llama3.1-8b"
+      modelDisplayLabel: "Cerebras"
